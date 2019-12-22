@@ -10932,6 +10932,9 @@ body.sidebar-toggled footer.sticky-footer {
 
 .calculator-back{ cursor: pointer; padding: 0.1em 1em; float: right; }
 
+.text-black{ color: black; }
+.font30{ font-size: 30px; }
+
 @media  (max-width: 1500px){
 
   .calculator-result{
