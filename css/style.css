@@ -10948,7 +10948,7 @@ body.sidebar-toggled footer.sticky-footer {
   .title-text{ 
     margin: 1%; background: #FFCB04; order: 3; width: 100%; padding: 2%; opacity: 0.9;
   }
-  .title-text h3{ margin: 2%; font-size: 1.2rem }
+  .title-text h3{ margin: 3%; font-size: 1.2rem }
   .text-warning{ color: #00529C !important; margin: 3%; }
   .logout{
     text-align: center; width: 100%; order: 1;
