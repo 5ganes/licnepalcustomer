@@ -10946,9 +10946,9 @@ body.sidebar-toggled footer.sticky-footer {
   .logo{ width: 100%; text-align: center; order: 2}
   .logo img{ width: 140px;opacity: 0.9; }
   .title-text{ 
-    margin: 3%; background: #FFCB04; order: 3; width: 100%; padding: 2%; opacity: 0.9;
+    margin: 1%; background: #FFCB04; order: 3; width: 100%; padding: 2%; opacity: 0.9;
   }
-  .title-text h3{ margin: 1%; font-size: 1.2rem }
+  .title-text h3{ margin: 2%; font-size: 1.2rem }
   .text-warning{ color: #00529C !important; margin: 3%; }
   .logout{
     text-align: center; width: 100%; order: 1;
