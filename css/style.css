@@ -10943,7 +10943,7 @@ body.sidebar-toggled footer.sticky-footer {
 
   .hr-line-logout{ display: block; }
 
-  .logo{ width: 100%; text-align: center; order: 2}
+  .logo{ width: 100%; text-align: center; order: 2; margin-bottom: 2%;}
   .logo img{ width: 140px;opacity: 0.9; }
   .title-text{ 
     margin: 1%; background: #FFCB04; order: 3; width: 100%; padding: 2%; opacity: 0.9;

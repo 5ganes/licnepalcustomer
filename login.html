@@ -3,41 +3,105 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Login </title>
+  <title>Customer Portal</title>
   
   <!-- Custom fonts for this template-->
   <link href="css/font-awesome/all.min.css" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template-->
   <link href="css/style.css" rel="stylesheet">
+
+  <style type="text/css">
+    .card-login{
+      margin-top: 1rem !important;max-width: 100% !important;
+      background: #007bff;color: white;
+    }
+    .card-columns .card{ width: 50%; margin: 0; padding: 0; }
+    .card-columns .card a{ padding: 20% 0%; width: 100%; display: block; }
+    @media (max-width: 700px){
+      .card-columns .card{ width: 50%; margin: 0; padding: 0; }
+    }
+  </style>
+
 </head>
 
-<body style="background-color: #00ADEF">
+<body id="page-top">
 
-  <div class="container">
-    <div class="card card-login mx-auto mt-5">
-      <div class="mt-3 text-center">
-        <img src="images/lic-logo.png" class="img-fluid img-thumbnail" width="70%">
+  <nav class="navbar">
+    <div class="title-text">
+      <h3 class="text-warning">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>&nbsp;&nbsp; User Login</h3>
+    </div>
+  </nav>
+
+  <div id="wrapper">
+
+    <div id="content-wrapper" style="padding-top: 0">
+
+      <hr class="hor-line margintop0">
+
+      <!-- Navigation-->
+      <div class="container">
+        <div class="card card-login mx-auto mt-5">
+          <div class="card-body">
+            <form action="login.html" method="POST" id="loginForm">
+              <div class="form-group">
+                <div class="form-label-group">
+                  <input type="text" id="username" name="username" class="form-control" placeholder="Username" required>
+                  <span class="glyphicon glyphicon-user"></span>
+                  <label for="username" id="errUsername">Username</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-label-group">
+                  <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+                  <label for="password" id="errPassword">Password</label>
+                </div>
+              </div>
+              
+              <input type="submit" name="login" value="Login" class="btn btn-block submit">
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="card-header mt-3">Login</div>
-      <div class="card-body">
-        <form action="login.html" method="POST" id="loginForm">
-          <div class="form-group">
-            <div class="form-label-group">
-              <input type="text" id="username" name="username" class="form-control" placeholder="Username" required>
-              <span class="glyphicon glyphicon-user"></span>
-              <label for="username" id="errUsername">Username</label>
-            </div>
+
+      <hr class="hor-line">
+
+      <!-- Sticky Footer -->
+      <footer class="container-fluid">
+        <div class="my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright © LIC Nepal, 2019. All Rights Reserved</span>
           </div>
-          <div class="form-group">
-            <div class="form-label-group">
-              <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
-              <label for="password" id="errPassword">Password</label>
-            </div>
-          </div>
-          
-          <input type="submit" name="login" value="Login" class="btn btn-block submit">
-        </form>
+        </div>
+      </footer>
+
+    </div>
+    <!-- /.content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
       </div>
     </div>
   </div>
@@ -51,5 +115,10 @@
 
   <!-- Jquery form validator -->
   <script type="text/javascript" src="js/validateforms.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/admin.min.js"></script>
+
 </body>
+
 </html>
