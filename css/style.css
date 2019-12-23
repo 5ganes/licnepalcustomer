@@ -4870,7 +4870,7 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  /*border-radius: 0.25rem;*/
 }
 
 .card > hr {
@@ -10934,6 +10934,9 @@ body.sidebar-toggled footer.sticky-footer {
 
 .text-black{ color: black; }
 .font30{ font-size: 30px; }
+
+.title-logout span:first-child{  }
+.title-logout span:last-child{ float: right; }
 
 @media  (max-width: 1500px){
 
