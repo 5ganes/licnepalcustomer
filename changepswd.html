@@ -14,7 +14,7 @@
   <style type="text/css">
     .card-login{
       margin-top: 1rem !important;max-width: 100% !important;
-      background: #09BBFF;color: white;
+      background: #007bff;color: white;
     }
     .card-columns .card{ width: 50%; margin: 0; padding: 0; }
     .card-columns .card a{ padding: 20% 0%; width: 100%; display: block; }
@@ -30,7 +30,8 @@
   <nav class="navbar">
     <div class="title-text">
       <h3 class="text-warning">
-        <a href="dashboard.html"><i class="fas fa-arrow-left"></i></a>&nbsp;&nbsp; Quick Services</h3>
+        <a href="dashboard.html"><i class="fas fa-arrow-left"></i></a>&nbsp;&nbsp; Change Password
+      </h3>
     </div>
   </nav>
 
@@ -42,36 +43,41 @@
 
       <!-- Navigation-->
       <div class="container">
-        <div class="row"  style="margin: 0 auto">
-          <div class="card-columns row" style="margin:0">
-            <div class="card nav-item" style="background-color: #efc834">
-              <a href="http://licnepal.com.np/calculator/" class="text-black">
-                <div class="card-body text-center">
-                  <p class="card-text"><i class="fa fa-calculator font30"></i><br>Premium Calculator</p>
+        <div class="card card-login mx-auto mt-5">
+          <div class="card-body">
+            <form action="register.html" method="POST" id="registerForm">
+              
+              <div class="form-group">
+                <div class="form-label-group">
+                  <input type="text"class="form-control" placeholder="Full Name" disabled>
+                  <span class="glyphicon glyphicon-user"></span>
+                  <label>FullName : Sanjeev Agrawal</label>
                 </div>
-              </a>
-            </div>
-            <div class="card bg-primary nav-item">
-              <a href="" class="text-white">
-                <div class="card-body text-center">
-                  <p class="card-text"><i class="fa fa-map-marker-alt font30"></i><br>Office Locator</p>
+              </div>
+
+              <div class="form-group">
+                <div class="form-label-group">
+                  <input type="password" id="oldPassword" name="oldPassword" class="form-control" placeholder="Old Password" required>
+                  <label for="oldPassword" id="oldPassword">Old Password</label>
                 </div>
-              </a>
-            </div>
-            <div class="card bg-primary nav-item">
-              <a href="downloadforms.html" class="text-white">
-                <div class="card-body text-center">
-                  <p class="card-text"><i class="fa fa-download font30"></i><br>Download Forms</p>
+              </div>
+
+              <div class="form-group">
+                <div class="form-label-group">
+                  <input type="password" id="newPassword" name="newPassword" class="form-control" placeholder="New Password" required>
+                  <label for="newPassword" id="newPassword">New Password</label>
                 </div>
-              </a>
-            </div>
-            <div class="card nav-item" style="background-color: #efc834">
-              <a href="https://www.licnepal.com.np/product_posts/money-back-plan/" class="text-black">
-                <div class="card-body text-center">
-                  <p class="card-text"><i class="fa fa-test font30"></i><br>Test Tab</p>
+              </div>
+
+              <div class="form-group">
+                <div class="form-label-group">
+                  <input type="password" id="confNewPassword" name="confNewPassword" class="form-control" placeholder="Confirm Password" required>
+                  <label for="confNewPassword" id="confNewPassword">New Password</label>
                 </div>
-              </a>
-            </div>
+              </div>
+              
+              <input type="submit" name="changePassword" value="Change Password" class="btn btn-block submit">
+            </form>
           </div>
         </div>
       </div>
