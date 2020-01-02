@@ -14,13 +14,16 @@
   <style type="text/css">
     .card-login{
       margin-top: 1rem !important;max-width: 100% !important;
-      background: #09BBFF;color: white;
+      background: #007bff;color: white;
     }
-    .container{ background-color: #8AC1FF; padding: 2%; }
+    .card-columns .card{ width: 50%; margin: 0; padding: 0; }
+    .card-columns .card a{ padding: 20% 0%; width: 100%; display: block; }
     @media (max-width: 700px){
-      .card-columns .card{ width: 100%;}
+      .card-columns .card{ width: 50%; margin: 0; padding: 0; }
     }
-    .nav-item{ padding: 3%; }
+
+    .backtopolocies{ background-color: yellow; padding: 0;}
+    .backtopolocies a{ color: black; display: block;width: 100%; padding: 3%; text-align: center; }
   </style>
 
 </head>
@@ -30,7 +33,7 @@
   <nav class="navbar">
     <div class="title-text">
       <h3 class="text-warning title-logout">
-        <span><a href="dashboard.html"><i class="fas fa-arrow-left"></i></a>&nbsp;&nbsp; Basic Services</span>
+        <span><a href="basicservices.html"><i class="fas fa-arrow-left"></i></a>&nbsp;&nbsp; Add New Policy</span>
         <span>
           <a href="dashboard.html"><i class="fas fa-home"></i></a> &nbsp;
           <a href="logout.html"><i class="fas fa-power-off"></i></a>
@@ -47,57 +50,35 @@
 
       <!-- Navigation-->
       <div class="container">
-        <div class="row"  style="margin: 0 auto">
-          <div class="card-columns row" style="margin:0">
-            <div class="card bg-primary nav-item">
-              <a href="policyschedule.html" class="text-white">
-                <div class="card-body">
-                  <p class="card-text"><i class="fa fa-calendar-alt"></i> &nbsp;Policy Schedule</p>
+        <div class="card card-login mx-auto mt-5">
+          <div class="card-body">
+            <form action="register.html" method="POST" id="registerForm">
+              
+              <div class="form-group">
+                <div class="form-label-group">
+                  <select name="relationship" id="plan_name" class="form-control" required="">
+                    <option value="">Select Relationship</option>
+                    <option value="self">Self</option>
+                    <option value="spouse">Spouse</option>
+                  </select>
                 </div>
-              </a>
-            </div>
-            <div class="card bg-primary nav-item">
-              <a href="http://licnepal.com.np/calculator/" class="text-white">
-                <div class="card-body">
-                  <p class="card-text"><i class="fa fa-calculator"></i> &nbsp;Premium Calculator</p>
+              </div>
+
+              <div class="form-group">
+                <div class="form-label-group">
+                  <input type="policyNumber" id="policyNumber" name="policyNumber" class="form-control" placeholder="Policy Number" required>
+                  <label for="policyNumber" id="policyNumber">Policy Number</label>
                 </div>
-              </a>
-            </div>
-            <div class="card bg-primary nav-item">
-              <a href="policystatus.html" class="text-white">
-                <div class="card-body">
-                  <p class="card-text"><i class="fa fa-bell"></i> &nbsp;Policy Status</p>
+              </div>
+              <div class="form-group row" style="margin-left: 0; margin-right: 0;">
+                <div class="col-6 backtopolocies">
+                  <a href="policyschedule.html">Back to Policies</a>
                 </div>
-              </a>
-            </div>
-            <div class="card bg-primary nav-item">
-              <a href="addnewpolicy.html" class="text-white">
-                <div class="card-body">
-                  <p class="card-text"><i class="fa fa-plus-square"></i> &nbsp;Add New Policy</p>
+                <div class="col-6 submit-button">
+                  <input type="submit" name="submit" value="Submit" class="btn btn-block submit">
                 </div>
-              </a>
-            </div>
-            <div class="card bg-primary nav-item">
-              <a href="claimstatus.html" class="text-white">
-                <div class="card-body">
-                  <p class="card-text"><i class="fa fa-bell"></i> &nbsp;Claim Status</p>
-                </div>
-              </a>
-            </div>
-            <div class="card bg-primary nav-item">
-              <a href="loanstatus.html" class="text-white">
-                <div class="card-body">
-                  <p class="card-text"><i class="fa fa-bell"></i> &nbsp;Loan Status</p>
-                </div>
-              </a>
-            </div>
-            <div class="card bg-primary nav-item">
-              <a href="revivalquotation.html" class="text-white">
-                <div class="card-body">
-                  <p class="card-text"><i class="fa fa-book"></i> &nbsp;Revival Quotation</p>
-                </div>
-              </a>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
